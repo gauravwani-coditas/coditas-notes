@@ -1,0 +1,90 @@
+Firebase  
+Firebase Authentication:  dependencies :
+	1. firebase_core:
+	2.firebase_auth:
+
+
+Firebase firestore
+
+Storing data in firestore
+	1. Books and Authors for each user
+	
+	User -> (entity)
+		1. Books 	
+			-> book 1  -> book1 description 
+			-> book 2 -> book 2 description 
+
+		2. Authors
+			-> author 1 -> author1 description
+			-> author 2 -> author2 description
+{
+
+	userName : 
+	userFamilyName:
+	userId : 
+	userPassword : 
+	books : { 		book 1 : {
+			bookName :
+			bookDescription 
+		}
+		book 2: {
+			bookName :
+			bookDescription 
+		} 	}
+       authors  : { 		author 1 : {
+			authorName :
+			authorDescription
+		}
+		author 2: {
+			authorName :
+			authorDescription :  
+		} 	}
+}
+
+Using realtime retrieval of user details after sign in or already sign in
+
+Steps : 
+	1. Create a collection  : ‘users’
+	2. Create a sample documents for all fields like name, surname, books, authors
+	
+
+2. To store data persistently : 
+    1. FirebaseFirestore.instance.settings = const Settings(persistenceEnabled : true)
+	
+3. Creating model class : 
+    1. Users{
+        1. userGiverName
+        2. userName
+        3. userSurName
+        4. Books (entity)
+        5. Authors (entity)}
+    2. Books {
+        1. bookName
+        2. bookDescription }
+    3. Authors {
+        1. authorName
+        2. authorDescription}
+
+
+
+	
+
+Firestore
+
+1. Collections ;
+    1. It is group of documents
+    2. It can contain nested collections to store data in any collection 
+2. Documents : 
+    1. Documents are individual units of data in Firestone, similar to JSON objects
+    2. Each document contains set of key-value pairs
+    3. Documents are uniquely identified by their id within the collection 
+    4. Documents can also contain sub collections
+
+
+Firebase cloud messaging:
+
+	generate fcm token
+
+
+1. Firebase image upload and fetch
+2. Location in foreground and backgroun

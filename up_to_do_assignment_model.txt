@@ -1,0 +1,71 @@
+UpToDo App
+
+To Do :
+	1. Make new category screen as stageful and handle state on response
+	2. Add new category
+
+Advanced : 
+	Integrate database in our project
+	add only categories
+	
+	Add Complete as tasks, category, flags
+
+
+Hive : Data is stored in boxes in hives using key-value  stores 
+
+1. Hive Setup
+2. Create Hive Model
+    1. Transform model
+    2. Generate model adapter
+    3. Register model adapter
+        1. Hive.registerAdapter(Adapter_name)
+3. Use CRUD Operations
+    1. Hive.openBox()  to open our hive box in memory from local storage 
+            1. Hive.openBox<Transaction>(‘box_name’)
+            2. Hive.box(‘box_name’).close()
+    2. Hive closeBox() to close our hive box from loading memory to local storage
+4. Connect UI to Hive
+
+ 
+
+Hive setup:
+	1. Imports : 
+		a. Hive
+		b. Hive_flutter
+
+	2.setup : 
+		a.Hive.initFlutter()
+
+		
+
+		Project Architecture
+
+UpToDo :
+
+
+Intro : 
+	1) Entities : 
+		a) IntroEntity(imageUrl, title, description)		
+	
+		
+Home : 
+	1) Entities : 
+		a) Task(title, description, category, priority, schedule(date, time)
+		b) category(category_name, category_icon, category_color)
+
+
+
+SQFLite plugin to use SQLite database 
+
+//Categories data handling  with clean architecture and bloc
+//Categories data representation
+
+
+//Product data handling  with clean architecture and bloc
+//Product data representation
+	
+
+
+
+
+

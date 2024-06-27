@@ -1,0 +1,74 @@
+Flutter Basics
+
+
+1. Multithreading in flutter
+2. Canvas api on native platforms
+3.  Expanded and flex
+4. ListView and SingleChildScrollView
+5. Stop watch class
+6. Internal flutter working
+7. Functions inside funtion
+
+Flutter Expense Tracker app : 
+
+1. SnackBars
+2. DialogBox
+3. Dismissible in lists
+4. ModalBottomSheet
+5. Appear
+6. Datepicker
+7. Dropdown
+8. Function passing
+9. Conditional Rendering
+10. Theming
+
+
+How Flutter Works : 
+
+1. Everything in flutter is widget including row, column and  buttons
+2. Flutter has its own rendering  engine Skia
+3. Flutter code convert into native machine Arm and Arm64 using AOT(Ahead of Time) and JIT (Just in time) compilation 
+4. 
+
+Three widget Trees : 
+
+1. Widget Tree -> It is visible to developer as we create nested widgets.
+2. Element Tree -> it is runtime representation of our widget tree.
+3. Render Tree -> It paints the UI with reference to the element tree.
+
+When the build method is called for the first time. The element tree is built for the widget tree in memory and the render tree takes reference from element tree and renders the UI. 
+
+When any changes made to the Widget Tree then the same elements from previous element tree are reused and only the new element is updated.Further Render tree will only render the newly updated element and not the whole UI.
+
+
+Widget of The day : Dismissible Widget  
+A widget that can be dismissed by dragging in the indicated direction.
+
+Dragging or flinging this widget in the Dismiss direction causes the child to slide out of view. Following the slide animation, if resize duration is non-null, the Dismissible widget animates its height (or width, whichever is perpendicular to the dismiss direction) to zero over the resizeDuration.
+
+It is generally used to delete items of list view.  General Properties :  direction :  onDismissed : 
+onResize : 
+onUpdate:
+Child : 
+
+State Management :  widgets are redrawn when data changes.
+
+1. SetState()
+2. Providers
+3. Riverpods
+
+Mixins in flutter : It is used to apply feature of inheritance by keeping the class heirarchy flat.
+Mixins consists of method signatures, which can we applied to our class using with keyword. 
+
+
+1. Providers :
+2. Three parts of provider : 1)  ChangeNotifier, ChangeNotifierProvider, consumer.
+
+Assignment 1  : Check priority of mixins.
+
+1. Add provider package to our project
+2. 
+
+
+
+

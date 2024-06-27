@@ -1,0 +1,83 @@
+JavaScript
+
+1.Intro
+    1. JavaScript is Dynamically , loosely bound scripting language
+    2. Dynamically = we don’t need to define data type of variables, it defines at runtime .
+    3. Loosely = we can have operations on elements of different data types (addition, subtraction,etc) unlike static languages like c,c++,java, etc
+    4. Scripting language which does not have main function and render
+
+Functionalities : 
+
+ 	1) It adds functionality to web pages.
+	2) Object oriented
+	3) Event driven
+	4)Asynchronous - It helps UI run peacefully while fetching response from server.
+    
+
+Datatypes in javaScript : 
+
+1. Primitive :
+    1. Number 
+    2. String
+    3. Boolean
+    4. Undefined (Not defined are not defined and undefined are not assigned)
+    5. Null
+    6. Symbol
+    7. Bigint
+2. Non-primitive:
+    1. Array
+    2. Functions
+
+Strings: strings in js are immutable
+
+	string to int can also be done using + operator
+	using parseInt()
+	using numbe()
+
+	charAt()
+	charCodeAt() give ascii value of character
+
+	difference between toLowerCase() and tolocalLowerCase()
+	substr(a,b) : a - starting index and b - no. of characters.
+	trim(), trimStart(), trimEnd()
+	
+False values : 
+0
+‘’
+Null 
+Undefined
+NaN
+False
+
+Array properties
+
+Arr.length
+
+Array methods: 
+arr.push()
+arr.pop();
+arr.shift()
+arr.unshift()
+arr.slice(si,ei+1);
+arr.splice(si, ei, add1,add2);
+arr.sort();
+
+arr.sort(compareFunction(a,b){
+	Return a.length-b.length}
+)
+
+
+arr.toString() //it will convert array to string
+It is used to compare exactly same arrays .
+
+Array.isArray() //used to identify whether it is array.
+
+Destructuring is used to access keys of objects rather than . Or [‘key’];
+
+JS is single theaded language.
+
+Promise -> pending,resolve,reject.
+
+Promise : used to async operations 
+1. Promise is a class and we create object of that class and return Promise supports response, reject operations. It holds parameters which 
+

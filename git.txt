@@ -1,0 +1,78 @@
+Git 
+Vcs : version control system
+Sim :  source control management
+
+Types of versioning : 
+
+Cvcs : centralised
+Dcvs : decentralised
+
+Assignment : 
+Pros and cons of config git global and locally.
+
+Git username, password, email set locally and globally 
+Know their pros and cons.
+
+Who will maintain logs of global users and local users.
+Command to get the users globally and locally.
+
+What is concept ?
+How its working ?
+Why we learn it ?
+
+Git init
+Create file
+Git add . (Working to staging)
+Git commit -m “message”.
+Commands for git 
+
+
+open a folder
+set config local user.name and user.email if required git confirg user.name username , git config user.email user.email, git config —list to get users info
+git init (initiates repository) creates .git file
+make file or change file 
+git status to check status of repo
+git add . OR git add filename for adding files on GitHub
+git commit -m “message”
+check status by git status
+
+//To add repo on GitHub :
+//git branch -M main :  (move branch to main)
+	=> git branch : show git command related to branch
+	=> -M : move operation
+	=> main : main branch
+
+//git remote add origin “git_urL” : (adds new remote named origin url
+	=>git remote : git command related to remote repos
+	=>add origin ‘git_url; : adds new remote_url to our git name origin
+
+//git push -u origin main
+	=>git push : used to push remote branches With the local branches
+	=> -u is upstream means tracking relationship between local branch and main branch
+	=> origin represents name of remote repo
+	=>  main is local branch
+
+//git pull : git pull and git merge.
+//git fetch : downloads content from remote repository.
+//git merge : combines multiple sequences of commits to single branch.
+
+Branch commands
+//git branch branch_name  — creating branch
+//git checkout branch_name -- switching branch
+
+Merge in Git
+//merging is process of combining changes from different branches into one branch	
+
+
+Fast forward merge in git : 
+Fast forward merge in git provide linear history of commits 
+We made one branch in our main repo 
+We made many commits in our branch and there is no other branch in our main 
+When we rebase our branch Over main our branch is fast forwarded and merged.
+
+Today Working on :  Clean Architecture videos  Bloc Assignment 
+Tomorrow working on : API Calls in Flutter  Blockers :  Bloc Assignment
+
+https://forms.gle/39qFnikeodnq2pXk8
+
+How many threads in flutter ?

@@ -1,0 +1,16 @@
+Routing
+
+1. Auto route
+	a. auto_route
+	b. build_runner
+	c. auto_route_generator
+	
+
+2. Commands :
+    1. Dart run build_runner build
+    2. Dart run build_runner build —delete-conflicting-outputs
+
+3. Shared preferences : 
+    1. It is used to store data in the form of instances .
+    2. It can store int, double, bool, string, List<String>
+

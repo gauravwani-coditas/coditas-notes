@@ -1,0 +1,92 @@
+MongoDB
+
+
+Show dis
+Use db_name
+Show collections — tables
+db.createCollection(‘collection_name’)
+Help
+db.collection_name.drop()
+If no tables in database then database is also deleted.
+
+
+db.create
+db.collection.find => select * from table
+
+
+db.Employee.find().explain("executionStats")
+
+Creating Database : 
+
+1. Use db_name
+
+Creating Collection(Table):
+
+db.createCollection(‘collection_name’)
+
+Inserting records (Creating documents):  
+db.collection_name.insertOne({object})
+db.collection_name.insertMany({object1},{object2})
+
+Certainly! MongoDB uses a query language similar to JSON to retrieve data from collections. Here are some common query operations in MongoDB:
+
+1. **Find Documents:**
+   - The `find()` method is used to retrieve documents from a collection. It takes a query object as an argument and returns a cursor to the matching documents.
+   - Example: `db.collection.find({name: "John"})`
+
+2. **Query Operators:**
+   - MongoDB provides various query operators to perform complex queries:
+     - **Comparison Operators:** `$eq`, `$ne`, `$gt`, `$gte`, `$lt`, `$lte`
+     - **Logical Operators:** `$and`, `$or`, `$not`, `$nor`
+     - **Element Operators:** `$exists`, `$type`
+     - **Evaluation Operators:** `$regex`, `$text`, `$where`
+     - **Array Operators:** `$all`, `$elemMatch`, `$size`
+   - Example: `db.collection.find({age: {$gte: 18, $lte: 30}})`
+
+3. **Projection:**
+   - The `find()` method can also take a projection object to specify which fields to include or exclude in the result.
+   - Example: `db.collection.find({}, {name: 1, age: 1, _id: 0})`
+
+4. **Sorting:**
+   - The `sort()` method is used to sort the result based on one or more fields.
+   - Example: `db.collection.find().sort({age: 1})` (ascending) or `db.collection.find().sort({age: -1})` (descending)
+
+5. **Limiting Results:**
+   - The `limit()` method is used to limit the number of documents returned.
+   - Example: `db.collection.find().limit(10)`
+
+6. **Skipping Results:**
+   - The `skip()` method is used to skip a specified number of documents.
+   - Example: `db.collection.find().skip(5)`
+
+7. **Counting Documents:**
+   - The `count()` method is used to count the number of documents that match a query.
+   - Example: `db.collection.find({name: "John"}).count()`
+
+8. **Aggregation:**
+   - The `aggregate()` method is used to perform aggregation operations like grouping, sorting, and counting.
+   - Example: `db.collection.aggregate([{ $group: { _id: "$name", total: { $sum: 1 } } }])`
+
+9. **Text Search:**
+   - MongoDB provides a `text` index and a `$text` operator for performing full-text searches.
+   - Example: `db.collection.find({$text: {$search: "John"}})`
+
+10. **Regular Expressions:**
+    - MongoDB supports regular expressions for pattern matching.
+    - Example: `db.collection.find({name: /^J/})`
+
+11. **Array Queries:**
+    - MongoDB provides operators like `$all`, `$elemMatch`, and `$size` for querying arrays.
+    - Example: `db.collection.find({tags: {$all: ["tag1", "tag2"]}})`
+
+12. **Geospatial Queries:**
+    - MongoDB supports geospatial queries for querying documents based on their location.
+    - Example: `db.collection.find({location: {$near: [40.73, -73.93]}})`
+
+These are some of the most commonly used query operations in MongoDB. You can combine these operations to perform complex queries as needed.
+
+
+/
+
+
+
